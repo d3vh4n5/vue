@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1 v-show="conectado">Estas conectado - Directiva v-show</h1>
+        <h1 v-if="conectado">Estas conectado - Directiva v-if</h1>
+
+        <p v-if="edad >= 18">Eres mayor de 18</p>
+        <p v-else>No puedes entrar</p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+
+        const app = new Vue({
+            el: '#main',
+            data: {
+                conectado: false, // el elemento aparecerá dependiendo esta variable.
+                edad: 16
+            }
+        })
+
+    </script>
+</body>
+</html>

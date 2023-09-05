@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h3>agregar tarea</h3>
+        <input type="text" placeholder="tarea nueva" v-model="tarea">
+        <button v-on:click="agregarTarea">Agregar tarea</button>
+
+
+        <h2>Listado de tareas</h2>
+        <hr>
+        <ul>
+            <li v-for="tarea in tareas">
+                {{tarea.tarea}} 
+            </li>
+        </ul>
+
+        <hr>
+        <h3>Tareas completadas</h3>
+        <h4>{{mostrarNombre}}</h4>
+        <ul>
+            <li v-for="item in mostrarCompletadas">
+                {{item.tarea}}
+            </li>
+        </ul>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+
+        const app = new Vue({
+            el: '#main',
+            data: {
+                tarea: null,
+                tareas: [
+                    {tarea: 'tarea 1', completado:false},
+                    {tarea: 'tarea 2', completado:true},
+                    {tarea: 'tarea 3', completado:false},
+                    {tarea: 'tarea 4', completado:true},
+                    {tarea: 'tarea 5', completado:false},
+                ]
+            },
+            methods: {
+                agregarTarea(){
+                    this.tareas.unshift({tarea: this.tarea, completado: false});
+                    this.tarea = '';
+                }
+            },
+            computed:{
+                mostrarCompletadas(){
+                    return this.tareas.filter(item=>item.completado)
+                },
+                mostrarNombre(){
+                    return 'Jansito'
+                }
+            }
+            
+        })
+
+    </script>
+</body>
+</html>
