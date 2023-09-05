@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h3>agregar tarea</h3>
+        <input type="text" placeholder="tarea nueva" v-model="tarea">
+        <button v-on:click="agregarTarea">Agregar tarea</button>
+
+
+        <h2>Listado de tareas</h2>
+        <hr>
+        <ul>
+            <li v-for="tarea in tareas" class="card">
+                {{tarea.tarea}} 
+            </li>
+        </ul>
+        <div class="alert alert-primary"> asdasd</div>
+        <hr>
+        <h3>Tareas por titulo</h3>
+        <h4>{{mostrarNombre}}</h4>
+        <ul>
+            <li v-for="item in mostrarPorTitulo">
+                {{item.tarea}}
+            </li>
+        </ul>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+
+        const app = new Vue({
+            el: '#main',
+            data: {
+                tarea: null,
+                tareas: [
+                    {tarea: 'tarea 1', completado:false},
+                    {tarea: 'perrear 2', completado:true},
+                    {tarea: 'mirar 3', completado:false},
+                    {tarea: 'mirar 4', completado:true},
+                    {tarea: 'jugar 5', completado:false},
+                ]
+            },
+            methods: {
+                agregarTarea(){
+                    this.tareas.unshift({tarea: this.tarea, completado: false});
+                    this.tarea = '';
+                }
+            },
+            computed:{
+                mostrarCompletadas(){
+                    return this.tareas.filter(item=>item.completado)
+                },
+                mostrarNombre(){
+                    return 'Jansito'
+                },
+                mostrarPorTitulo(){
+                    return this.tareas.filter( item => item.tarea.includes(this.tarea))
+                }
+            }
+            
+        })
+
+    </script>
+</body>
+</html>
