@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h2>Directiva v-on</h2>
+        <hr>
+            <h2>Agregar tarea</h2>
+            <input type="text" placeholder="Agregar tarea" v-model="tarea">
+            <button v-on:click="agregarTarea">Agregar tarea </button>
+        <hr>
+        <ul>
+            <li v-for="tarea in tareas">{{tarea}}</li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data: {
+                tarea: null,
+                tareas:[
+                    "Ver programacion inicial CaC",
+                    "Continuar con Vue",
+                    "Continuar con React"
+                ]
+            },
+            methods : {
+                agregarTarea(){
+                    this.tareas.unshift(this.tarea);
+                    this.tarea = ''
+                }
+            }
+
+        })
+    </script>
+</body>
+</html>
