@@ -1,4 +1,12 @@
+:root{
+  color-scheme: light dark;
+}
 body{
-  background-color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (prefers-color-scheme: dark){
+  body{
+      color: yellowgreen;
+  }
 }

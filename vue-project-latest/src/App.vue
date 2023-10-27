@@ -1,9 +1,17 @@
 <script setup>
 import Chat from './components/Chat.vue';
+import InfoCard from './components/InfoCard.vue'
 </script>
 
 <template>
   <header>
+    <InfoCard 
+      title="Atención ⚠️" 
+      msg="Este trabajo está en desarrollo, se creará más adelante el backend
+      en node, que será una web-socket API. Tambien se está aprendiendo VUE de 
+      UDEMY y luego de este curso: https://www.youtube.com/watch?v=vOdj_e3Z4jY
+      " 
+    ></InfoCard>
   </header>
 
   <main>
