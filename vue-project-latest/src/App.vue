@@ -1,21 +1,21 @@
 <script setup>
-import Chat from './components/Chat.vue';
-import InfoCard from './components/InfoCard.vue'
+import HelloWorld from './components/HelloWorld.vue'
+import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
   <header>
-    <InfoCard 
-      title="Atención ⚠️" 
-      msg="Este trabajo está en desarrollo, se creará más adelante el backend
-      en node, que será una web-socket API. Tambien se está aprendiendo VUE de 
-      UDEMY y luego de este curso: https://www.youtube.com/watch?v=vOdj_e3Z4jY
-      " 
-    ></InfoCard>
+    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
+
+    <div class="wrapper">
+      <HelloWorld msg="You did it!" otraProp="Esta es otra prop" />
+    </div>
   </header>
 
   <main>
-    <Chat />
+    <h1>
+      Repasar lo de slots (parecido a los children de React)
+    </h1>
   </main>
 </template>
 
