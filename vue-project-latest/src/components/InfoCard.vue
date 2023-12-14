@@ -4,6 +4,8 @@ defineProps({
     title: { type: String },
 })
 </script>
+
+
 <template>
     <div class="info-card">
         <h3>{{ title }}</h3>
@@ -12,6 +14,9 @@ defineProps({
         </p>
     </div>
 </template>
+
+
+
 <style scoped>
 .info-card{
     font-family: monospace;
