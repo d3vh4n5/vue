@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import InfoCard from './components/InfoCard.vue';
 import PupUp from './components/PupUp.vue';
 import TarjetaComponent from './components/TarjetaComponent.vue';
+import QuestComponent from './components/QuestComponent.vue';
 import { onMounted, ref } from 'vue';
 import axios from 'axios';
 
@@ -11,7 +12,9 @@ const objeto = {
   email: "asdfasd@asdasdf.com"
 }
   const count = ref(false)
+  const respuesta = ref(false)
   const usuarios = ref({})
+  const preguntas = ref(null)
   const usuario = ref({})
 
   function cerrar(){
@@ -27,17 +30,22 @@ const objeto = {
       axios.get("https://jsonplaceholder.typicode.com/users")
         .then( resp => usuarios.value = resp.data)
   }
+  function obtenerPreguntas(){
+      axios.get("../public/gproyectos.json")
+        .then( resp => preguntas.value = resp.data)
+  }
   onMounted(() => {
     console.log(`The initial count is ${count.value}.`)
     obtenerUsuarios();
-    // console.log(usuarios)
+    obtenerPreguntas()
+    console.log(preguntas)
   })
 
 </script>
 
 <template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
+  <!-- <header>
+    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
 
@@ -46,7 +54,7 @@ const objeto = {
         otraProp="Usando composition API" />
 
     </div>
-  </header>
+  </header> -->
 
   
   <main>
@@ -55,8 +63,8 @@ const objeto = {
 
 
     <InfoCard 
-      title="Hola"
-      msg="Este es un mensaje de prueba, no le des bola" />
+      title="Practica de examen"
+      msg="Practicando el examen de Gestión de Proyectos." />
 
 
     <section>
@@ -66,10 +74,10 @@ const objeto = {
       <TarjetaComponent @mas="handler" :usuario="usuario" v-for="usuario in usuarios"/>
     </section>
 
-
-
-
-
+    
+    <div >
+      <QuestComponent :quest="pregunta" v-for="pregunta in preguntas"/>
+    </div>
   </main>
 </template>
 
