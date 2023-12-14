@@ -10,7 +10,7 @@
     :telefono="usuario.phone"
   ></Persona> -->
 
-  <h1>Slots</h1>
+  <!-- <h1>Slots</h1>
   <ComponenteSlot>
   </ComponenteSlot>
   <ComponenteSlot>
@@ -22,21 +22,26 @@
         Este contenido esta dentro edl slot numero 2 dentro del mismo componente
       </b></p>
     </template>
-  </ComponenteSlot>
+  </ComponenteSlot> -->
 
+  <CePadre></CePadre>
 </template>
 
 <script>
 // import Persona from './components/Persona.vue';
 import axios from 'axios';
+// import ComponenteSlot from './components/ComponenteSlot.vue';
 
-import ComponenteSlot from './components/ComponenteSlot.vue';
+import CePadre from './components/CePadre.vue';
+// import elemento from './components/elemento.vue';
+
 
 export default {
   name: 'App',
   components: {
     // Persona
-    ComponenteSlot
+    // ComponenteSlot,
+    CePadre,
   },
   data(){
     return{
