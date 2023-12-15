@@ -4,6 +4,7 @@ import InfoCard from './components/InfoCard.vue';
 import PupUp from './components/PupUp.vue';
 import TarjetaComponent from './components/TarjetaComponent.vue';
 import QuestComponent from './components/QuestComponent.vue';
+import ContadorComponent from './components/ContadorComponent.vue';
 import { onMounted, ref } from 'vue';
 import axios from 'axios';
 
@@ -59,7 +60,7 @@ const objeto = {
   
   <main>
 
-
+    <ContadorComponent/>
 
 
     <InfoCard 
