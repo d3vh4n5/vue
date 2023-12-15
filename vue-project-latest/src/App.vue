@@ -57,6 +57,31 @@ const objeto = {
     </div>
   </header> -->
 
+  <header>
+    <h1>Nav</h1>
+    <nav>
+      <ul>
+        <li>
+
+          <router-link active-class="activo" exact to="/">
+            INICIO
+          </router-link>
+        </li>
+        <li>
+          <router-link active-class="activo" to="/contador">
+            Blog
+          </router-link>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  
+  <router-view v-slot="{ Component }">
+    <transition>
+      <component :is="Component" />
+    </transition>
+  </router-view>
   
   <main>
 
@@ -85,6 +110,10 @@ const objeto = {
 <style scoped>
 header {
   line-height: 1.5;
+}
+
+.activo{
+  color: red;
 }
 
 .logo {
