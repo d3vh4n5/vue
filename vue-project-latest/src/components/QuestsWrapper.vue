@@ -40,6 +40,8 @@ watch(
 <template>
   <div class="container">
     <button @click="redireccionarInicio">Volver</button>
+
+    <h1>Hay mas preguntas de DRE</h1>
     <!-- <p>
       Parametro: {{ mat }}
     </p> -->
