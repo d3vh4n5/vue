@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "pregunta": "1.Teniendo en cuenta el tenor de las consecuencias de una toma de decisión, ¿Sobre qué paradigma debés concentrarte para tomar decisiones con mayor productividad?",
+        "respuesta": "Importancia"
+    },
+    {
+        "id": 2,
+        "pregunta": "2.Jorge es CEO de una compañía de riesgos y debe decidir sobre una refuncionalización del área ¿Qué tipo de decisiones le recomendás tomar?",
+        "respuesta": "Estratégicas"
+    },
+    {
+        "id": 3,
+        "pregunta": "3.La toma de decisiones racional es la toma de decisiones que se toma con la razón, es decir, con la intuición y la experiencia del decisor.",
+        "respuesta": "Falso"
+    },
+    {
+        "id": 4,
+        "pregunta": "4.Andrés tiene una consultora de gestión organizacional y debe evaluar un nuevo contrato con un cliente por 5 años ¿Qué tipo de decisión tomará Andrés?",
+        "respuesta": "Estratégicas"
+    },
+    {
+        "id": 5,
+        "pregunta": "5.Es correcto afirmar que, uno de los principios básicos de la toma de decisiones, es centrarse en la situación puntual y particular de los aspectos relativos a la situación que necesitás resolver (o prever), abstrayéndote de su contexto para no distraer tu decisión.",
+        "respuesta": "Falso"
+    },
+    {
+        "id": 6,
+        "pregunta": "6.Es correcto afirmar que, uno de los principios básicos de la toma de decisiones, es centrarse en el establecimiento de los objetivos relativos a la situación que necesitás resolver (o prever).",
+        "respuesta": "Verdadero"
+    },
+    {
+        "id": 7,
+        "pregunta": "7.El orden de las 5 etapas del Design Thinking son: Empatizar, Definir, idear, prototipar y testear.",
+        "respuesta": "Verdadero"
+    },
+    {
+        "id": 8,
+        "pregunta": "8.Las decisiones que se toman en los mandos medios de la organización son decisiones estratégicas.",
+        "respuesta": "Falso"
+    },
+    {
+        "id": 9,
+        "pregunta": "9.Es posible ser eficiente sin ser eficaz",
+        "respuesta": "Falso"
+    },
+    {
+        "id": 10,
+        "pregunta": "10.Resolver problemas busca retomar el camino del cumplimiento de objetivos.",
+        "respuesta": "Verdadero"
+    },
+    {
+        "id": 11,
+        "pregunta": "11.Trabajamos en atención al cliente y debemos comunicarnos con clientes disconformes con el servicio de la empresa. Para hacerlo, disponemos de un listado de direcciones de emails. ¿Contamos con lo necesario para cumplir el objetivo?",
+        "respuesta": "No, los datos no son suficientes."
+    },
+    {
+        "id": 12,
+        "pregunta": "12.Paula tiene que resolver un problema de clima laboral en su equipo de trabajo y, para ello, tiene datos aislados de diferentes insatisfacciones manifestadas por sus colaboradores. Con esta información es suficiente para analizar el problema.",
+        "respuesta": "Falso"
+    },
+    {
+        "id": 13,
+        "pregunta": "13.Es adecuado realizar entrevistas a los colaboradores implicados en el problema u oportunidad en la etapa de identificación del problema.",
+        "respuesta": "Verdadero"
+    },
+    {
+        "id": 14,
+        "pregunta": "14.Es inadecuado utilizar técnicas de recolección de datos para poder avanzar en la identificación del problema",
+        "respuesta": "Falso"
+    },
+    {
+        "id": 15,
+        "pregunta": "15.Para poder avanzar en la identificación del problema, debemos utilizar técnicas de recolección de datos.",
+        "respuesta": "Verdadero"
+    },
+    {
+        "id": 16,
+        "pregunta": "16. (NO SE COPIO LA PRIMER PARTE)…….algunas metodologías, como por ejemplo el diagrama de Ishikawa, para poder avanzar en la identificación del problema.",
+        "respuesta": "Verdadero"
+    },
+    {
+        "id": 17,
+        "pregunta": "17.Se debe evitar la realización de entrevistas en la etapa de identificación del problema, ya que es una instancia muy prematura para darle participación al equipo de trabajo y podría generar preocupaciones y ocupaciones innecesarias en la estructura.",
+        "respuesta": "Falso"
+    },
+    {
+        "id": 18,
+        "pregunta": "18.Selecciona las 3 (tres) opciones correctas. ¿Cuáles de los siguientes recursos nos ayudarán a la etapa inicial de identificación de un problema?",
+        "respuesta": "El diagrama de Ishikawa - El método de los 5 por qué - La entrevista."
+    },
+    {
+        "id": 19,
+        "pregunta": "19.Selecciona las 2 (dos) opciones correctas. Juan se encuentra recolectando información para profundizar sobre el problema de incumplimiento de los estándares de calidad. Para ello, ¿qué técnicas debe utilizar?",
+        "respuesta": "5 Porqués - Diagrama de Ishikawa."
+    },
+    {
+        "id": 20,
+        "pregunta": "20.Durante una reunión de trabajo de recolección de información, Juan utiliza la metodología de los 5 porqués. ¿Es adecuado su uso en esta etapa de trabajo?",
+        "respuesta": "Sí, es una de las 3 metodologías sugeridas."
+    },
+    {
+        "id": 21,
+        "pregunta": "21.Selecciona las 2 (dos) opciones correctas. Lucas se encuentra en el proceso de resolución de problemas para el área en la que trabaja. Para iniciar la etapa de elección de alternativas realizará una reunión con su equipo de trabajo. ¿Cuáles de las siguientes alternativas son recomendaciones válidas para dicha instancia?",
+        "respuesta": "Diseñar la entrevista - Mantener la mente de principiante."
+    },
+    {
+        "id": 22,
+        "pregunta": "22.Eduardo tiene un local de venta de insumos informáticos y debe resolver cómo afrontará sus próximos compromisos financieros. Para ello deberá analizar la evolución de los ingresos y egresos de los últimos 18 meses. ¿Qué herramienta estadística es recomendable que utilice en esta situación?",
+        "respuesta": "Gráfico de tendencias."
+    },
+    {
+        "id": 23,
+        "pregunta": "23.Juan José tiene una ferretería que se encuentra con problemas de liquidez.Él cree que esto es debido a la falta de pago de clientes a los cuales ha fiado a lo largo de los últimos 5 años ¿Qué herramienta estadística le recomendás que utilice para evaluar su hipótesis a lo largo del tiempo?",
+        "respuesta": "Gráfico de tendencias"
+    },
+    {
+        "id": 24,
+        "pregunta": "24.Cecilia es directora ejecutiva de un grupo de empresas de servicios en Mendoza y está por tomar una decisión estratégica relativa a los beneficios que la agrupación le ofrece a sus socios estratégicos. Ella ya cuenta con información detallada sobre cada una de las alternativas. ¿Qué herramienta es recomendable utilizar para evaluar la factibilidad de sus alternativas?",
+        "respuesta": "Matriz de alternativas."
+    },
+    {
+        "id": 25,
+        "pregunta": "25.Selecciona las 3 (tres) opciones correctas. Karina es representante en el cono sur de una institución educativa y debe proponerle a la junta directiva de dicha institución una proyección del nivel de actividad para fijar su nuevo presupuesto anual. ¿Cuáles de estas herramientas son recomendables para el análisis estadístico que debe realizar?",
+        "respuesta": "Gráfico circular - Gráfico de tendencias - Histograma"
+    },
+    {
+        "id": 26,
+        "pregunta": "26.Completa el fragmento con la opción correcta. En el desarrollo de alternativas es adecuado utilizar:",
+        "respuesta": "Mindmeister."
+    },
+    {
+        "id": 27,
+        "pregunta": "27.¿En qué instancia nos será de utilidad identificar y ponderar los criterios de decisión importantes para la organización en la cual estamos tomando una decisión?",
+        "respuesta": "Selección"
+    },
+    {
+        "id": 28,
+        "pregunta": "28.La importancia es un concepto asociado al siguiente atributo de una situación:",
+        "respuesta": "Consecuencias"
+    },
+    {
+        "id": 29,
+        "pregunta": "29.Jorge tiene que tomar una decisión importante en su trabajo y decide hacerlo basado en su experiencia y su instinto. ¿Cuál es el costo de oportunidad que puede llegar a asumir?",
+        "respuesta": "Incurrir en pérdida de prestigio reputacional - Incurrir en pérdidas económicas - No tomar la decisión correcta"
+    },
+    {
+        "id": 30,
+        "pregunta": "30.La urgencia es un concepto asociado al siguiente atributo de una situación:",
+        "respuesta": "Tiempo"
+    }
+]
