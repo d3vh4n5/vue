@@ -48,6 +48,11 @@ const objeto = {
             Usuarios + pop-Up
           </router-link>
         </li>
+        <li>
+          <router-link active-class="activo" to="/jsoncreator">
+            Json creator
+          </router-link>
+        </li>
       </ul>
     </nav>
     <p><i>Para que las animaciones de transición funcionen, todo

@@ -11,7 +11,7 @@ const preguntas = ref(null)
 const router = useRouter()
 const route = useRoute()
 
-const { mat } = route.params
+const { mat } = route.params // Tomo el parámetro de la ruta
 const title = "Examen de" + mat;
 function obtenerPreguntas(){
       axios.get(`../public/${mat}.json`)
