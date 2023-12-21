@@ -61,6 +61,12 @@ const input2 = ref("");
 </script>
 
 <template>
+    
+    <p>
+        Para que los componentes se animen bien al entrar, deben estar 
+        envueltos en 1 solo elemento, como este no lo está, aparece mal 
+        al momento de hacerle click a la ruta.
+    </p>
 
 https://vueschool.io/lessons/vue-fundamentals-capi-user-events-in-vue-3
 

@@ -31,7 +31,7 @@ const usuarios = ref({})
 <template>
     <section>
       <h3> Contenido con un pop up</h3>
-      <transition name="aparecer">
+      <transition>
         <PupUp @cerrar="cerrar" :objeto="usuario" v-if="count"></PupUp>
       </transition>
       <br>
@@ -41,17 +41,14 @@ const usuarios = ref({})
 
 <style scoped>
 
-/* .aparecer-enter{
+
+.v-enter-active, .v-leave-active{
+    /* top: 50px;  */
+    transition: all .3s ease;  
+}
+.v-leave-to, .v-enter-from{ 
+    top: -50px; 
     opacity: 0;
 }
-.aparecer-enter-active{
-    transition: opacity 3s;
-}
-.aparecer-leave-to{
-    opacity: 0;
-}
-.aparecer-leave-active{
-    transition: opacity 3s;
-} */
 
 </style>

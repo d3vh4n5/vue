@@ -61,11 +61,11 @@ const objeto = {
     </i></p>
   </header>
   
-  <router-view v-slot="{ Component }">
-    <transition name="aparecer">
+  <transition>
+    <router-view v-slot="{ Component }">
       <component :is="Component" />
-    </transition>
-  </router-view>
+    </router-view>
+  </transition>
   
   <main>
 
@@ -81,19 +81,12 @@ const objeto = {
 </template>
 
 <style scoped>
-.aparecer-enter{
-        opacity: 0;
+.v-enter-active, .v-leave-active{
+    transition: opacity .3s ease;  
 }
-.aparecer-enter-active{
-    transition: opacity .3s;
-}
-.aparecer-leave-to{
+.v-leave-to, .v-enter-from{ 
     opacity: 0;
 }
-.aparecer-leave-active{
-    transition: opacity .3s;
-}
-
 
 
 
