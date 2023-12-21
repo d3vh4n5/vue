@@ -72,20 +72,32 @@ https://vueschool.io/lessons/vue-fundamentals-capi-user-events-in-vue-3
 
     <h1>Guardar en JSON</h1>
 
-    <label for="input1">Input 1:</label>
+    <label for="input1">Pregunta:</label>
     <br>
-    <textarea v-model.trim="input1"  cols="30" rows="10" placeholder="Ingrese la pregunta"></textarea>
+    <textarea 
+        v-model.trim="input1"  
+        cols="30" rows="10" 
+        placeholder="Ingrese la pregunta"
+        class="form-control"
+    ></textarea>
     <!-- <input type="text" id="input1" placeholder="Ingrese valor para Input 1"> -->
     <br>
     {{ input1 }}
-    <label for="input2">Input 2:</label>
+    <label for="input2">Respuesta correcta:</label>
     <br>
-    <textarea v-model="input2"  cols="30" rows="10" placeholder="Ingrese la respuesta"></textarea>
+    <textarea 
+        v-model="input2"  
+        cols="30" 
+        rows="10" 
+        placeholder="Ingrese la respuesta"
+        class="form-control"
+    ></textarea>
     <!-- <input type="text" id="input2" placeholder="Ingrese valor para Input 2"> -->
     <br>
     <!-- <button @click="agregarDatos">Agregar a objeto</button> -->
     <button 
         @click="preguntas.push({pregunta: input1, respuesta: input2})"
+        class="btn btn-primary"
     >Agregar a objeto</button>
 
     <h2>Datos en el objeto:</h2>
@@ -93,6 +105,14 @@ https://vueschool.io/lessons/vue-fundamentals-capi-user-events-in-vue-3
         {{ preguntas }}
     </pre>
 
-    <button @click="descargarJSON">Descargar JSON</button>
+    <button @click="descargarJSON" class="btn btn-success">Descargar JSON</button>
 
 </template>
+<style scoped>
+
+textarea{
+    resize: vertical;
+    width: 100%;
+}
+
+</style>

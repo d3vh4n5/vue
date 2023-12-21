@@ -14,7 +14,12 @@ const route = useRoute()
 const { mat } = route.params // Tomo el parámetro de la ruta
 const title = "Examen de" + mat;
 function obtenerPreguntas(){
-      axios.get(`../public/${mat}.json`)
+//   files in the public directory are served at the root path.
+// Instead of /public/gproyectos.json, use /gproyectos.json.
+// files in the public directory are served at the root path.
+// Instead of /public/decisiones.json, use /decisiones.json.
+      // axios.get(`../public/${mat}.json`)
+      axios.get(`/${mat}.json`)
         .then( resp => preguntas.value = resp.data)
 }
 
