@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .aparecer-enter{ /* ENTRADA*/
+        opacity: 0;
+    }
+    .aparecer-enter-active{  /* TRANSCRURSO DE ENTRADA */
+        transition: opacity 1s;  
+    }
+    .aparecer-leave-to{  /*  SALIDA */
+        opacity: 0;
+    }
+    .aparecer-leave-active{ /* TRANSCURSO DE LA SALIDA */
+        transition: opacity 1s;
+    }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h2>Listado de tareas</h2>
+        <button @click="btnMostrar">Mostrar / ocultar</button>
+        <transition name="aparecer"> <!-- Envuelve lo que queremos mostrar -->
+    
+            <ul v-if="mostrar"> <!-- Controla lo que queremos mostrar -->
+                <li
+                class="red"
+                v-bind:class="{completado: tarea.completado}" 
+                @click="completarTarea(tarea)"
+                v-for="tarea in tareas"
+                >
+                    {{tarea.titulo}}
+                </li>
+            </ul>
+        </transition>
+        <hr>
+        <pre>
+          {{tareas}}
+        </pre>
+        <input type="text" v-model="valor">
+        <p>valor: {{valor}}</p>
+      </div>
+    
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+      </script>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script>
+    
+            const app = new Vue({
+              el: "#app",
+              data:{
+                mostrar: false,
+                tareas:[
+                  {titulo:'Tarea 1', completado:false},
+                  {titulo:'Tarea 2', completado:false},
+                  {titulo:'Tarea 3', completado:false},
+                  {titulo:'Tarea 4', completado:false},
+                  {titulo:'Tarea 5', completado:false},
+                ]
+              },
+              methods:{
+                completarTarea(tarea){
+                  tarea.completado = !tarea.completado;
+                },
+                btnMostrar(){
+                    this.mostrar = !this.mostrar;
+                }
+              }
+            })
+        </script>
+</body>
+</html>

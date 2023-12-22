@@ -10,47 +10,36 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <style>
-    .red{
-      color: red;
-    }
-
-    .red:hover{
-      cursor: pointer;
-    }
-
-    .completado{
-      text-decoration: line-through;
-      color: green;
-    }
-  </style>
+  
 </head>
 
 <body>
+
+  <p>
+    Para trabajarlo en produccion quizas convenga las variables de conexión 
+    tenerlas como variables de ambiente.
+  </p>
   
-  <div id="app">
-    <h2>Listado de tareas</h2>
+  <div id="main">
+    <form @submit.prevent="addUsuario">
+      <input v-model="nombre" type="text" id="nombre" placeholder="introducir nombre">
+      <input v-model="edad" type="text" id="edad" placeholder="introducir edad">
+      <input type="submit" value="Añadir usuario">
+    </form>
+    <hr>
+    <h2>Listadod e usuarios</h2>
     <ul>
-      <li
-      class="red"
-        v-bind:class="{completado: tarea.completado}" 
-        @click="completarTarea(tarea)"
-        v-for="tarea in tareas"
-      >
-        {{tarea.titulo}}
+      <li v-for="usuario in usuarios">
+        <button class="btn btn-danger" @click="deleteUser(usuario.id)">Eliminar</button>
+        <button class="btn btn-primary" @click="updateUser(usuario.id)">Actualizar</button>
+        {{ usuario.data.edad }} - {{ usuario.data.nombre }} -- {{ usuario.id }}
       </li>
     </ul>
-    <hr>
-    <pre>
-      {{tareas}}
-    </pre>
-    <input type="text" v-model="valor">
-    <p>valor: {{valor}}</p>
   </div>
 
 
 
-
+  <!-- Bootstrapp -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
@@ -58,30 +47,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+
+  <!-- Vue -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script>
 
-        const app = new Vue({
-          el: "#app",
-          data:{
-            valor: '',
-            tareas:[
-              {titulo:'Tarea 1', completado:false},
-              {titulo:'Tarea 2', completado:false},
-              {titulo:'Tarea 3', completado:false},
-              {titulo:'Tarea 4', completado:false},
-              {titulo:'Tarea 5', completado:false},
-            ]
-          },
-          methods:{
-            completarTarea(tarea){
-              tarea.completado = !tarea.completado;
-            }
-          }
-        })
+  <!-- Firebase -->
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
-
-  </script>
+  // ...
+  <!-- Custom files -->
+  <script type="module" src="./init-firebase.js"></script>
+  
 </body>
 
 </html>
