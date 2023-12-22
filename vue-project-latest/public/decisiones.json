@@ -148,5 +148,77 @@
         "id": 30,
         "pregunta": "30.La urgencia es un concepto asociado al siguiente atributo de una situación:",
         "respuesta": "Tiempo"
-    }
+    },
+    {
+        "pregunta": "31. ¿Cuál de los siguientes tipo de gráficos propondrías al analizar la evolución en el tiempo de una variable determinada en relación a otra durante el proceso de toma de decisiones ?",
+        "respuesta": "Histograma"
+      },
+      {
+        "pregunta": "32 Lucia es gerente de marketing de una empresa que fabrica y vende camperas de cuero y quiere analizar los resultados de las ultimas campañas comerciales teniendo en cuenta el nivel de ventas, los comentarios de los interesados y la satisfacción de sus clientes. ¿Qué tipo de herramienta le sugerís que use para el adecuado análisis de su actividad?",
+        "respuesta": "Objetivos SMART  -  ERP"
+      },
+      {
+        "pregunta": "33. Lucas es director de una organización que realiza comercialización de productos al menudeo y tiene operaciones todo LATAM. El debe evaluar sus ultimas decisiones apoyado en datos analíticos confiables.  ¿Qué herramienta le sugerís utilizar?",
+        "respuesta": "ERP"
+      },
+      {
+        "pregunta": "34. Jorge es CEO de una compañía de riesgos y debe decidir sobre la refuncionalización del área ¿Qué tipo de decisiones le recomendas tomar?",
+        "respuesta": "Estrategicas"
+      },
+      {
+        "pregunta": "35. Javier es CEO de una Consultora y debe decidir sobre el presupuesto publicitario de la organización para el año venidero ¿Qué tipo de decisión le recomiendas tomar?",
+        "respuesta": "Estrategicas"
+      },
+      {
+        "pregunta": "36. ¿Hugo tiene una empresa de venta de Insumos eléctricos y debe reemplazar su proveedor de cables ¿Qué tipo de decisión seria ?",
+        "respuesta": "Estrategicas"
+      },
+      {
+        "pregunta": "36. Sol es jefa de administración de un supermercado y debe decidir sobre la cantidad de cajas a abrir durante el turno mañana ¿Qué tipo de decisión le recomendas?",
+        "respuesta": "Operativas"
+      },
+      {
+        "pregunta": "37. Lucas es jefe de producción y tiene que resolver el reemplazo de uno de los operadores del turno mañana. ¿Qué tipo de decisión le recomendas?",
+        "respuesta": "Operativas"
+      },
+      {
+        "pregunta": "38. ¿De qué manera se clasifican las decisiones tienen en cuenta la trascendencia organizacional?",
+        "respuesta": "Operativas (Para mi que no pero en el documento está así)"
+      },
+      {
+        "pregunta": "39. Andrés tiene una consultora de gestión organizacional y debe evaluar un nuevo contrato con un cliente por 5 años. ¿Qué tipo de decisión tomará Andrés?",
+        "respuesta": "Estratégica"
+      },
+      {
+        "pregunta": "40. Para favorecer una mirada táctica en una instancia creativa de toma de decisiones  es adecuado que al menos un interlocutor “tenga puesto” su sombrero negro.",
+        "respuesta": "Verdadero"
+      },
+      {
+        "pregunta": "41. Lucas es el jefe de producción de una fabrica de piletas de lona y debe decidir sobre como organizar los francos de la semana próxima. ¿Qué tipo de decisión se encuentra afrontando?",
+        "respuesta": "Operativa  -  Tacticas  (???? asi esta en el documento, para mi es tactica)"
+      },
+      {
+        "pregunta": "42. Julio es coordinador de ventas en una organización y cree tener una técnica ideal para desarrollar alternativas ella es B & S ¿Con que otro nombre se conocer esta técnica?",
+        "respuesta": "Brainwriting"
+      },
+      {
+        "pregunta": "43. Lucas es el Jefe de Calidad de una empresa financiera y se encuentra tomando una decisión sobre la contratación de un proveedor para un proyecto a su cargo. El criterio económico es el mas relevante para la organización, motivo por el cual es correcto que decida la alternativa menos onerosa para la organización.",
+        "respuesta": "Verdadero"
+      },
+      {
+        "pregunta": "44. José tiene una marroquineria y debe decidir sobre la utilidad que le dará a unos recortes de cuero que le quedan como sobrantes de una producción de camperas. El puede hacer billeteras o posa vasos. ¿Sobre que atributo deberá basarse para tomar la mejor decisión?",
+        "respuesta": "Costo de Oportunidad"
+      },
+      {
+        "pregunta": "45. Betsabe tiene una sandwicheria local y no logra desarrollar un sistema de cadeteria que entregue los pedidos en menos de 5 minutos ( como lo hace su competencia) ¿Basada en que atributo debe Betsabe tomar una nueva decisión sobre sus cadetes?",
+        "respuesta": "Eficiencia"
+      },
+      {
+        "pregunta": "46. ¿Cuál de las siguientes herramientas nos permitirá obtener información confiable para el análisis de causas y para la evaluación de los resultados obtenidos?",
+        "respuesta": "ERP"
+      },
+      {
+        "pregunta": "47. Paula es jefa de recursos humanos de una empresa de exportación y debe pensar en un plan creativo para que los colaboradores de la empresa mejoren el clima interno de la organización ¿Cuál de las siguientes metodologías le sugerís que utilice para lograr alternativas creativas?",
+        "respuesta": "Design Thinking  -  Objetivos Smart"
+      }
 ]

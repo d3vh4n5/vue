@@ -82,7 +82,7 @@ https://vueschool.io/lessons/vue-fundamentals-capi-user-events-in-vue-3
     ></textarea>
     <!-- <input type="text" id="input1" placeholder="Ingrese valor para Input 1"> -->
     <br>
-    {{ input1 }}
+    <!-- {{ input1 }} -->
     <label for="input2">Respuesta correcta:</label>
     <br>
     <textarea 
@@ -94,11 +94,11 @@ https://vueschool.io/lessons/vue-fundamentals-capi-user-events-in-vue-3
     ></textarea>
     <!-- <input type="text" id="input2" placeholder="Ingrese valor para Input 2"> -->
     <br>
-    <!-- <button @click="agregarDatos">Agregar a objeto</button> -->
-    <button 
+    <button @click="agregarDatos" class="btn btn-primary">Agregar a objeto</button>
+    <!-- <button 
         @click="preguntas.push({pregunta: input1, respuesta: input2})"
         class="btn btn-primary"
-    >Agregar a objeto</button>
+    >Agregar a objeto</button> -->
 
     <h2>Datos en el objeto:</h2>
     <pre id="datosObjeto">
