@@ -46,7 +46,7 @@ const respuesta = ref(false)
     margin: 10px 0;
     padding: 15px;
     border-radius: 10px;
-    /* height: 80px; */
+    height: 80px;
     min-height: fit-content;
     overflow: hidden;
     transition: all .3s;
@@ -78,8 +78,8 @@ button{
     opacity: 0;
 }
 
-/* .expand{
+.expand{
     height: 140px;
-} */
+}
 
 </style>
